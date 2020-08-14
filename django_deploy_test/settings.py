@@ -159,10 +159,3 @@ STATIC_URL = '/static/'
 
 prod_db  =  dj_database_url.config(conn_max_age=500)
 # DATABASES = {'default': dj_database_url.config()}
-
-
-#Fb client_id
-client_id = "744225326338616";
-
-#Fb client_secret
-client_secret = "170bad2cbe4885cc83768ef7c8b594ef";
