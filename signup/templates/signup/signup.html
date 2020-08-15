@@ -1,3 +1,6 @@
+{% load socialaccount %}
+{% providers_media_js %}
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -76,13 +79,13 @@
                         </div>
                         <div class="col-6">
                             <div class="signup-others">
-                              <img src="static/icons/facebook_login_icon.png" class="mx-auto d-block img-fluid">
-                              <p class="signup-others-p">Facebook</p>
+                                <a href="{% provider_login_url 'facebook' method='oauth2' %}"><img src="static/icons/facebook_login_icon.png" class="mx-auto d-block img-fluid"></a>
+                                <p class="signup-others-p">Facebook</p>
                             </div>
                         </div>
                         <div class="col-6">
                           <div class="signup-others">
-                              <img src="static/icons/google_login_icon.png" class="mx-auto d-block img-fluid">
+                              <a href="{% provider_login_url 'google' %}"><img src="static/icons/google_login_icon.png" class="mx-auto d-block img-fluid"></a>
                               <p class="signup-others-p">Gmail</p>
                           </div>
                         </div>
