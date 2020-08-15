@@ -163,6 +163,9 @@ input[type="submit"]{
     margin-bottom: 12px;
 }
 
+.submit-button {
+    background-color: #91949d;
+}
 
 .signup-or{
     text-align: center;

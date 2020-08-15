@@ -20,7 +20,7 @@
             <img src="static/images/logo.png" class="mx-auto d-block">
         </div> -->
 
-        <form action="/" method="post">
+        <form action="/signup" method="post">
             {% csrf_token %}
             <div class="content" id="content">
                 <div class="container">
@@ -31,39 +31,41 @@
                                   <label class="signup-form-label">Enter your name</label>
                                   <div class="row">
                                       <div class="col-6">
-                                          <input type="text" class="signup-form-input form-control" placeholder="First Name">
+                                          <input type="text" class="signup-form-input form-control" placeholder="First Name" name="first_name">
                                       </div>
                                       <div class="col-6">
-                                          <input type="text" class="signup-form-input form-control" placeholder="Last Name">
+                                          <input type="text" class="signup-form-input form-control" placeholder="Last Name" name="last_name">
                                       </div>
                                   </div>
                               </div>
                               <div class="form-group">
                                   <label class="signup-form-label">Give us your email</label>
-                                  <input type="email" class="signup-form-input form-control" placeholder="example@mail.com">
+                                  {{err.email.errors}}
+                                  <input type="email" class="signup-form-input form-control" placeholder="example@mail.com" name="email"> 
                               </div>
                               <div class="form-group">
                                   <label class="signup-form-label">Give us your mobile number</label>
+                                  {{error.phone.errors}}
                                   <div class="input-group mb-3">
                                       <div class="input-group-prepend">
                                         <span class="input-group-text">+91 </span>
                                       </div>
-                                      <input type="number" class="signup-form-input form-control" placeholder="Enter Your Mobile Number">
+                                      <input type="number" class="signup-form-input form-control" placeholder="Enter Your Mobile Number" name="phone">
                                   </div>
                               </div>
                               <div class="form-group">
                                   <label class="signup-form-label">Do you have a referral code?</label>
-                                  <input type="text" class="signup-form-input form-control" placeholder="Enter the code">
+                                  <input type="text" class="signup-form-input form-control" placeholder="Enter the code" name="referral_code_used">
                               </div>
                               <div class="form-group">
                                   <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck" name="grid_check">
                                     <label class="form-check-label" for="gridCheck">
                                       I accept the terms and policy
                                     </label>
                                   </div>
                               </div>
-                              <input type="submit" class="signup-form-input submit-button" value="Submit">
+                              <input type="submit" class="signup-form-input submit-button" value="Submit" id="submitButton">
                           </div>
                         </div>
                         <div class="col-12">
@@ -86,11 +88,8 @@
                         </div>
                     </div>
                 </div>
-              </div>
+            </div>
         </form>
-
-
-        
     </div>  
 
 </div>
@@ -98,12 +97,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <!-- <script>
-        $(document).ready(function(){
-            setTimeout(function() {
-                $('#preloader').fadeOut(1500);
-            }, 2000);
-        });
-    </script> -->
+    <script>
+        // $(document).ready(function(){
+        //     setTimeout(function() {
+        //         $('#preloader').fadeOut(1500);
+        //     }, 2000);
+        // });
+    </script>
 </body>
 </html>
