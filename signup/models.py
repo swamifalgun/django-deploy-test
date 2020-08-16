@@ -15,7 +15,7 @@ class AugustUser(models.Model):
     referral_code_used = models.CharField(max_length=255)
     phone = models.CharField(null=True, blank=True, max_length=64)
     auth_provider = models.CharField(max_length=255, null=True, blank=True)
-    references = models.ManyToManyField("self", blank=True, through='Referral', symmetrical=False, related_name='related_referrals+')
+    #references = models.ManyToManyField("self", blank=True, through='Referral', symmetrical=False, related_name='related_referrals+')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -37,7 +37,8 @@ class AugustUser(models.Model):
 
 
 class Referral(models.Model):
-    user = models.ForeignKey(AugustUser, on_delete=models.CASCADE)
+    code = models.CharField(max_length=255, null=True, blank=True)
+    user = models.ManyToManyField(AugustUser, blank=True)
 
     def __str__(self):
         return self.user.email
