@@ -27,7 +27,7 @@ SECRET_KEY = 'v2&3!xr%sbi&h52d=x5rcmc2+pdi1mz_x#&n-yai62dc6!g3eu'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*', 'django-deploy-test']
+ALLOWED_HOSTS = ['*', 'myaugustapp']
 
 
 # Application definition
