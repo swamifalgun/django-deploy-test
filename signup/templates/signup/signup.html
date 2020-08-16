@@ -6,7 +6,11 @@
 <head>
 	<title>August Sign Up</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="https://myaugust.app/wp-content/uploads/2020/08/cropped-favicon-1-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="https://myaugust.app/wp-content/uploads/2020/08/cropped-favicon-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" type="image/png" href="https://myaugust.app/wp-content/uploads/2020/08/cropped-favicon-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://myaugust.app/wp-content/uploads/2020/08/cropped-favicon-1-270x270.png" />
 	
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://myaugust.app/wp-content/themes/simple-bootstrap/style.css">
@@ -44,13 +48,13 @@
         <div class="row">
             <div class="col-12 col-sm-7">
                 <div class="signup-lefttext">
-                    <p class="signup-lefttext-heading">Join the waitlist now!</p>
-                    <p class="signup-lefttext-subheading">Get ₹500/-* on signup now.</p>
+                    <p class="signup-lefttext-heading">Join the waitlist!</p>
+                    <p class="signup-lefttext-subheading">Get ₹500/-*. Signup.</p>
                     <br/>
                     <br/>
                     <br/>
                     <p class="signup-lefttext-subheading">Refer a friend and earn more!</p>
-                    <p class="signup-lefttext-subheading">Your friend gets ₹500/- on signup and you also get ₹500/-* for every 3 friends you refer. </p>
+                    <p class="signup-lefttext-subheading">Your friend gets ₹500/-* on signup and you also get ₹500/-* for every 3 friends who signup using a referral code. </p>
                     <p class="signup-lefttext-subheading">Start inviting now!!</p>
                 </div>
             </div>
@@ -79,13 +83,13 @@
                             </div>
                             <div class="form-group">
                                 <label class="signup-form-label">Give us your mobile number</label>
-                                {{error.phone.errors}}
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                       <span class="input-group-text">+91 </span>
                                     </div>
                                     <input type="number" class="signup-form-input form-control" placeholder="Enter Your Mobile Number" name="phone">
                                 </div>
+                                {{error.phone.errors}}
                             </div>
                             <div class="form-group">
                                 <label class="signup-form-label">Do you have a referral code?</label>
@@ -99,7 +103,7 @@
                                   </label>
                                 </div>
                             </div>
-                            <input type="submit" class="signup-form-input submit-button" value="Submit" id="submitButton">
+                            <input type="submit" class="signup-form-input submit-button" value="Done" id="submitButton" data-toggle="modal" data-target="#successmodal">
                         </div>
 
                     </div>
@@ -112,7 +116,7 @@
                       <div class="col-6">
                           <div class="signup-others">
                               <a href="{% provider_login_url 'facebook' method='oauth2' %}">
-                                  <img src="https://myaugust.app/wp-content/uploads/2020/08/facebook_login_icon.png" class="mx-auto d-block img-fluid">
+                                  <img src="https://myaugust.app/wp-content/uploads/2020/08/login-with-facebook.png" class="mx-auto d-block img-fluid">
                               </a>
                               <p class="signup-others-p">Facebook</p>
                           </div>
@@ -120,16 +124,39 @@
                       <div class="col-6">
                         <div class="signup-others">
                             <a href="{% provider_login_url 'google' %}">
-                                <img src="https://myaugust.app/wp-content/uploads/2020/08/google_login_icon.png" class="mx-auto d-block img-fluid">
+                                <img src="https://myaugust.app/wp-content/uploads/2020/08/login-with-gmail.png" class="mx-auto d-block img-fluid">
                               </a>
-                            <p class="signup-others-p">Gmail</p>
+                            <p class="signup-others-p">Google</p>
                         </div>
                       </div>
                 </div>
             </form>
             </div>
+            
+            <div class="col-12">
+                <p class="signup-tnc">*Subject to Terms & Condition</p>
+            </div>
         </div>
     </div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#successmodal">
+        Launch modal
+      </button>
+    <!-- Modal -->
+<div class="modal fade bd-example-modal-sm" id="successmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+            <i class="fa fa-check success-icon" aria-hidden="true"></i>
+            <p class="success-message-heading">Congratulations!!</p>
+            <br/>
+            <p class="success-message-subheading">You’ve signed up successfully! <br/>You are now part of the waitlist. Please check your inbox for more details.</p>
+            <br/>
+            <br/>
+          <a href="https://myaugust.app/" class="success-message-home"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Return to Home </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <footer class="footer-bottom">
 		<div class="container">
