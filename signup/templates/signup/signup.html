@@ -7,16 +7,12 @@
 	<title>August Sign Up</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/png" href="https://myaugust.app/wp-content/uploads/2020/08/cropped-favicon-1-32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="https://myaugust.app/wp-content/uploads/2020/08/cropped-favicon-1-192x192.png" sizes="192x192" />
-<link rel="apple-touch-icon" type="image/png" href="https://myaugust.app/wp-content/uploads/2020/08/cropped-favicon-1-180x180.png" />
-<meta name="msapplication-TileImage" content="https://myaugust.app/wp-content/uploads/2020/08/cropped-favicon-1-270x270.png" />
 	
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://myaugust.app/wp-content/themes/simple-bootstrap/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- {% load static %}
-    <link rel="stylesheet" href="{% static 'css/signup.css' %}" type="text/css"> -->
+    
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}" type="text/css">
 </head>
 <body class="signup-page">
 
@@ -116,7 +112,7 @@
                       <div class="col-6">
                           <div class="signup-others">
                               <a href="{% provider_login_url 'facebook' method='oauth2' %}">
-                                  <img src="https://myaugust.app/wp-content/uploads/2020/08/login-with-facebook.png" class="mx-auto d-block img-fluid">
+                                  <img src="static/icons/login-with-facebook.png" class="mx-auto d-block img-fluid">
                               </a>
                               <p class="signup-others-p">Facebook</p>
                           </div>
@@ -124,7 +120,7 @@
                       <div class="col-6">
                         <div class="signup-others">
                             <a href="{% provider_login_url 'google' %}">
-                                <img src="https://myaugust.app/wp-content/uploads/2020/08/login-with-gmail.png" class="mx-auto d-block img-fluid">
+                                <img src="static/icons/login-with-gmail.png" class="mx-auto d-block img-fluid">
                               </a>
                             <p class="signup-others-p">Google</p>
                         </div>
@@ -134,7 +130,7 @@
             </div>
             
             <div class="col-12">
-                <p class="signup-tnc">*Subject to Terms & Condition</p>
+                <p class="signup-tnc">*Subject to Terms and Conditions.</p>
             </div>
         </div>
     </div>
