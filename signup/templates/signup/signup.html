@@ -8,104 +8,150 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="signup.css"> -->
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'css/signup.css' %}" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://myaugust.app/wp-content/themes/simple-bootstrap/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- {% load static %}
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}" type="text/css"> -->
 </head>
-<body>
+<body class="signup-page">
 
-    <div class="main-div">
-
-    <div class="smartphone">
-        <!-- <img src="img/phone1.png" class="smartphone-frame"> -->
-        <!-- <div id="preloader">
-            <img src="static/images/logo.png" class="mx-auto d-block">
-        </div> -->
-
-        <form action="/signup" method="post">
-            {% csrf_token %}
-            <div class="content" id="content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                          <div class="signup-form">
-                              <div class="form-group">
-                                  <label class="signup-form-label">Enter your name</label>
-                                  <div class="row">
-                                      <div class="col-6">
-                                          <input type="text" class="signup-form-input form-control" placeholder="First Name" name="first_name">
-                                      </div>
-                                      <div class="col-6">
-                                          <input type="text" class="signup-form-input form-control" placeholder="Last Name" name="last_name">
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="form-group">
-                                  <label class="signup-form-label">Give us your email</label>
-                                  {{err.email.errors}}
-                                  <input type="email" class="signup-form-input form-control" placeholder="example@mail.com" name="email"> 
-                              </div>
-                              <div class="form-group">
-                                  <label class="signup-form-label">Give us your mobile number</label>
-                                  {{error.phone.errors}}
-                                  <div class="input-group mb-3">
-                                      <div class="input-group-prepend">
-                                        <span class="input-group-text">+91 </span>
-                                      </div>
-                                      <input type="number" class="signup-form-input form-control" placeholder="Enter Your Mobile Number" name="phone">
-                                  </div>
-                              </div>
-                              <div class="form-group">
-                                  <label class="signup-form-label">Do you have a referral code?</label>
-                                  <input type="text" class="signup-form-input form-control" placeholder="Enter the code" name="referral_code_used">
-                              </div>
-                              <div class="form-group">
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck" name="grid_check">
-                                    <label class="form-check-label" for="gridCheck">
-                                      I accept the terms and policy
-                                    </label>
-                                  </div>
-                              </div>
-                              <input type="submit" class="signup-form-input submit-button" value="Submit" id="submitButton">
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <p class="signup-or"><strong>OR</strong></p>
-                        </div>
-                        <div class="col-12">
-                          <label class="signup-label">Signup using</label>
-                        </div>
-                        <div class="col-6">
-                            <div class="signup-others">
-                                <a href="{% provider_login_url 'facebook' method='oauth2' %}"><img src="static/icons/facebook_login_icon.png" class="mx-auto d-block img-fluid"></a>
-                                <p class="signup-others-p">Facebook</p>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                          <div class="signup-others">
-                              <a href="{% provider_login_url 'google' %}"><img src="static/icons/google_login_icon.png" class="mx-auto d-block img-fluid"></a>
-                              <p class="signup-others-p">Gmail</p>
-                          </div>
-                        </div>
-                    </div>
+    <header class="august-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-4">
+					<div class="brand-logodiv">
+						<a href="https://myaugust.app/" class="brand-logo">AUGUST</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-8">
+					<div class="header-rightdiv">
+						<ul class="header-socialmedia">
+							<li><a href="https://www.facebook.com/MyAugustapp-110056704136894"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.instagram.com/myaugustapp/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href="https://twitter.com/myaugustapp"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.youtube.com/channel/UCLNzcDbxr8RJSC1ShacYkLw"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/my-august-7152271b5"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						</ul>
+						<a href="https://django-deploy-test.herokuapp.com/signup" class="header-signup">SignUp</a>
+					</div>
+				</div>
+			</div>
+		</div>
+    </header>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-7">
+                <div class="signup-lefttext">
+                    <p class="signup-lefttext-heading">Join the waitlist now!</p>
+                    <p class="signup-lefttext-subheading">Get ₹500/-* on signup now.</p>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <p class="signup-lefttext-subheading">Refer a friend and earn more!</p>
+                    <p class="signup-lefttext-subheading">Your friend gets ₹500/- on signup and you also get ₹500/-* for every 3 friends you refer. </p>
+                    <p class="signup-lefttext-subheading">Start inviting now!!</p>
                 </div>
             </div>
-        </form>
-    </div>  
+            
+            <div class="col-12 col-sm-5">
+                <form action="/signup" method="post">
+                    {% csrf_token %}
+                <div class="row">
+                    <div class="col-12">
+                        <div class="signup-form">
+                            <div class="form-group">
+                                <label class="signup-form-label">Enter your name</label>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="text" class="signup-form-input form-control" placeholder="First Name" name="first_name">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" class="signup-form-input form-control" placeholder="Last Name" name="last_name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="signup-form-label">Give us your email</label>
+                                {{err.email.errors}}
+                                <input type="email" class="signup-form-input form-control" placeholder="example@mail.com" name="email"> 
+                            </div>
+                            <div class="form-group">
+                                <label class="signup-form-label">Give us your mobile number</label>
+                                {{error.phone.errors}}
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text">+91 </span>
+                                    </div>
+                                    <input type="number" class="signup-form-input form-control" placeholder="Enter Your Mobile Number" name="phone">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="signup-form-label">Do you have a referral code?</label>
+                                <input type="text" class="signup-form-input form-control" placeholder="Enter the code" name="referral_code_used">
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="gridCheck" name="grid_check">
+                                  <label class="form-check-label" for="gridCheck">
+                                    I accept the terms and policy
+                                  </label>
+                                </div>
+                            </div>
+                            <input type="submit" class="signup-form-input submit-button" value="Submit" id="submitButton">
+                        </div>
 
-</div>
+                    </div>
+                    <div class="col-12">
+                        <p class="signup-or"><strong>OR</strong></p>
+                      </div>
+                      <div class="col-12">
+                        <label class="signup-label">Signup using</label>
+                      </div>
+                      <div class="col-6">
+                          <div class="signup-others">
+                              <a href="{% provider_login_url 'facebook' method='oauth2' %}">
+                                  <img src="https://myaugust.app/wp-content/uploads/2020/08/facebook_login_icon.png" class="mx-auto d-block img-fluid">
+                              </a>
+                              <p class="signup-others-p">Facebook</p>
+                          </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="signup-others">
+                            <a href="{% provider_login_url 'google' %}">
+                                <img src="https://myaugust.app/wp-content/uploads/2020/08/google_login_icon.png" class="mx-auto d-block img-fluid">
+                              </a>
+                            <p class="signup-others-p">Gmail</p>
+                        </div>
+                      </div>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-12"></div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-6">
+					<p class="terms-policy"><a href="https://myaugust.app/terms-and-conditions/">Terms & Conditions</a> | <a href="https://myaugust.app/privacy-policy/">Privacy Policy</a></p>
+					<p class="copyright-text">Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2020 <a href="https://myaugust.app/">AUGUST</a>. All Rights Reserved. </p>
+				</div>
+				<div class="col-12 col-sm-6">
+					<p class="contact-us-heading">&nbsp;</p>
+					<p class="contact-us-mail"><a href="mailto:myaugustapp@gmail.com">Contact Us</a></p>
+				</div>
+			</div>
+		</div>
+
+	</footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script>
-        // $(document).ready(function(){
-        //     setTimeout(function() {
-        //         $('#preloader').fadeOut(1500);
-        //     }, 2000);
-        // });
-    </script>
 </body>
 </html>

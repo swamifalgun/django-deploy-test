@@ -1,117 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body{
-    background-color: #edeef3;
-    font-family: 'Montserrat', sans-serif;
-}
-
-::-webkit-scrollbar{
-	width: 8px;
-	height: 8px;
-	background-color: transparent;
-}
-::-webkit-scrollbar-track{
-    background-color: transparent;
-    border-radius: 0px;
-    box-shadow: none;
-}
-::-webkit-scrollbar-thumb{
-    background-color: #ccc;
-    border-radius: 10px;
-    box-shadow: none;
-}
-
-.main-div{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.smartphone {
-    position: relative;
-    width: 360px;
-    height: 640px;
-    margin: auto;
-    padding: 0px 22px;
-    /* border: 15px black solid; */
-    /* border-top-width: 40px;
-    border-bottom-width: 60px;
-    border-radius: 36px; */
-}
-
-/* .smartphone:before {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 5px;
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #fff;
-    border-radius: 10px;
-}
-
-.smartphone:after {
-    content: '';
-    display: block;
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    left: 50%;
-    bottom: -65px;
-    transform: translate(-50%, -50%);
-    background: #fff;
-    border-radius: 50%;
+/* .signup-page{
+    
 } */
-
-.smartphone .content {
-    width: 315px;
-    height: 100%;
-    overflow: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.signup-lefttext{
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
-.smartphone-frame{
-    position: absolute;
-    top:0;
-    left: 0;
-    z-index: 2;
+.signup-lefttext-heading{
+    margin-bottom: 0px;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(to left top, #003e3e, #008685);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
-#preloader{
-    position: absolute;
-    /* top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0; */
-    height: 100%;
-    width: calc(100% - 10px);
-    z-index: 1;
-    background-color: #2a2a2a;
-    display: flex;
-    align-items: center;
-    padding: 50px;
-    top: 5px;
-    left: 5px;
-    border-radius: 60px;
-    /* background: #2a2a2a url(img/logo.png) no-repeat;
-    background-position: center;
-    background-size: contain; */
+.signup-lefttext-subheading{
+margin-bottom: 0px;
+font-size: 20px;
+    font-weight: 600;
 }
-#preloader img{
-    width: 200px;
-}
-
 .signup-form{
-    margin: 15px auto;
+    margin: 30px 0px 15px 0px;
 }
 .signup-form-label{
     color: rgb(0,100,100);
     font-weight: 800;
     font-size: 14px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 .input-group-text{
     box-shadow: 12px 12px 16px 0 #dadde2, -8px -8px 12px 0 #fff;
@@ -160,7 +78,7 @@ input[type="submit"]{
     font-size: 13px;
 }
 .form-group{
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 .submit-button {
@@ -170,7 +88,8 @@ input[type="submit"]{
 .signup-or{
     text-align: center;
     position: relative;
-    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
     font-size: 14px;
 }
 .signup-or:before{
@@ -209,81 +128,30 @@ margin-bottom: 10px;
 }
 .signup-others-p{
     font-size: 12px;
-    margin-bottom: 0px;
+    margin-bottom: 30px;
     text-align: center;
     margin-top: 5px;
     font-weight: 600;
 }
-
-
-@media (max-width: 576px){
-    .main-div{
-        height: auto;
+@media (min-width: 576px) and (max-width: 768px){
+    .signup-lefttext-heading{
+        font-size: 40px;
+        line-height: 50px;
     }
-    #preloader{
-        height: 100vh;
-        width: 100%;
-        border-radius: 0px;
-        left: auto;
-        top: auto;
-    }
-    .smartphone{
-        width: 100%;
-        height: 100%;
-        margin: auto;
-        border: none;
-        border-top-width: 0;
-        border-bottom-width: 0;
-        border-radius: 0;
-        padding: 0px;
-    }
-    .smartphone::before{
-        display: none;
-    }
-    .smartphone::after{
-        display: none;
-    }
-    .smartphone .content {
-        width: 100%;
-        height: 100%;
-    }
-    .smartphone-frame{
-        display: none;
+    .signup-lefttext-subheading{
+        font-size: 18px;
     }
 }
-
-@media (max-width: 800px){
-    .main-div{
-        height: auto;
+@media (max-width: 575px){
+    .signup-lefttext{
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
-    #preloader{
-        height: 100vh;
-        width: 100%;
-        border-radius: 0px;
-        left: auto;
-        top: auto;
+    .signup-lefttext-heading{
+        font-size: 30px;
+        line-height: 40px;
     }
-    .smartphone{
-        width: 100%;
-        height: 100%;
-        margin: auto;
-        border: none;
-        border-top-width: 0;
-        border-bottom-width: 0;
-        border-radius: 0;
-        padding: 0px;
-    }
-    .smartphone::before{
-        display: none;
-    }
-    .smartphone::after{
-        display: none;
-    }
-    .smartphone .content {
-        width: 100%;
-        height: 100%;
-    }
-    .smartphone-frame{
-        display: none;
+    .signup-lefttext-subheading{
+        font-size: 16px;
     }
 }
