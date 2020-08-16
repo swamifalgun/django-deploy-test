@@ -1,1 +1,1 @@
-web: gunicorn django_deploy_test.wsgi --log-file -
+web: gunicorn myaugustapp.wsgi --log-file -
