@@ -10,7 +10,7 @@
 	
     <link rel="stylesheet" href="https://myaugust.app/wp-content/themes/simple-bootstrap/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/signup.css' %}" type="text/css">
 </head>
@@ -26,19 +26,13 @@
 				</div>
 				<div class="col-12 col-sm-8">
 					<div class="header-rightdiv">
-						<ul class="header-socialmedia">
-							<li><a href="https://www.facebook.com/MyAugustapp-110056704136894"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="https://www.instagram.com/myaugustapp/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-							<li><a href="https://twitter.com/myaugustapp"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a href="https://www.youtube.com/channel/UCLNzcDbxr8RJSC1ShacYkLw"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/my-august-7152271b5"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-						</ul>
+						<span class="header-get500">Get Rs 500/-*</span>
 						<a href="https://django-deploy-test.herokuapp.com/signup" class="header-signup">SignUp</a>
 					</div>
 				</div>
 			</div>
 		</div>
-    </header>
+	</header>
     
     <div class="container">
         <div class="row">
@@ -112,7 +106,7 @@
                       <div class="col-6">
                           <div class="signup-others">
                               <a href="{% provider_login_url 'facebook' method='oauth2' %}">
-                                  <img src="static/icons/login-with-facebook.png" class="mx-auto d-block img-fluid">
+                                  <img src="../../static/icons/login-with-facebook.png" class="mx-auto d-block img-fluid">
                               </a>
                               <p class="signup-others-p">Facebook</p>
                           </div>
@@ -120,17 +114,13 @@
                       <div class="col-6">
                         <div class="signup-others">
                             <a href="{% provider_login_url 'google' %}">
-                                <img src="static/icons/login-with-gmail.png" class="mx-auto d-block img-fluid">
+                                <img src="../../static/icons/login-with-gmail.png" class="mx-auto d-block img-fluid">
                               </a>
                             <p class="signup-others-p">Google</p>
                         </div>
                       </div>
                 </div>
             </form>
-            </div>
-            
-            <div class="col-12">
-                <p class="signup-tnc">*Subject to Terms and Conditions.</p>
             </div>
         </div>
     </div>
@@ -154,24 +144,39 @@
     </div>
   </div>
 
-    <footer class="footer-bottom">
-		<div class="container">
-			<div class="row">
-				<div class="col-12"></div>
-			</div>
-			<div class="row">
-				<div class="col-12 col-sm-6">
-					<p class="terms-policy"><a href="https://myaugust.app/terms-and-conditions/">Terms & Conditions</a> | <a href="https://myaugust.app/privacy-policy/">Privacy Policy</a></p>
-					<p class="copyright-text">Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2020 <a href="https://myaugust.app/">AUGUST</a>. All Rights Reserved. </p>
-				</div>
-				<div class="col-12 col-sm-6">
-					<p class="contact-us-heading">&nbsp;</p>
-					<p class="contact-us-mail"><a href="mailto:myaugustapp@gmail.com">Contact Us</a></p>
-				</div>
-			</div>
-		</div>
 
-	</footer>
+  <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <p class="signup-tnc">*Subject to Terms & Conditions.</p>
+        </div>
+    </div>
+</div>
+<footer class="footer-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-12"></div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <p class="terms-policy"><a href="https://myaugust.app/terms-and-conditions/">Terms & Conditions</a> | <a href="https://myaugust.app/privacy-policy/">Privacy Policy</a></p>
+                <p class="copyright-text">Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2020 <a href="https://myaugust.app/">AUGUST</a>. All Rights Reserved. </p>
+            </div>
+            <div class="col-12 col-sm-6">
+                <!-- <p class="contact-us-heading">&nbsp;</p> -->
+                <ul class="header-socialmedia">
+                    <li><a href="https://www.facebook.com/MyAugustapp-110056704136894"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/myaugustapp/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/myaugustapp"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCLNzcDbxr8RJSC1ShacYkLw"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/my-august-7152271b5"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
+                <p class="contact-us-mail"><a href="mailto:myaugustapp@gmail.com">Contact Us</a></p>
+            </div>
+        </div>
+    </div>
+
+</footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
