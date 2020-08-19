@@ -11,8 +11,6 @@ class AugustUserAdmin(admin.ModelAdmin):
     fields = ['first_name', 'last_name', 'email', 'phone', 'referral_code', 'referral_code_used',]
     list_display = ['id', 'email', 'phone']
 
-    inlines = (ReferralInline,)
-
 class ReferralAdmin(admin.ModelAdmin):
     fields = ['user',] 
 
