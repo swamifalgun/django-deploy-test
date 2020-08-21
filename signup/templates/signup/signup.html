@@ -16,7 +16,6 @@
     
 </head>
 <body class="signup-page">
-
     <header class="august-header">
 		<div class="container">
 			<div class="row">
@@ -28,7 +27,7 @@
 				<div class="col-12 col-sm-8">
 					<div class="header-rightdiv">
 						<span class="header-get500">Get Rs 500/-*</span>
-						<a href="https://django-deploy-test.herokuapp.com/signup" class="header-signup">SignUp</a>
+						<a href="/signup" class="header-signup">SignUp</a>
 					</div>
 				</div>
 			</div>
@@ -51,7 +50,7 @@
             </div>
             
             <div class="col-12 col-sm-5">
-                <form action="/signup" method="post">
+                <form action="/signup" method="post" id="form">
                     {% csrf_token %}
                 <div class="row">
                     <div class="col-12">
@@ -125,9 +124,9 @@
             </div>
         </div>
     </div>
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#successmodal">
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#successmodal">
         Launch modal
-      </button>
+      </button> -->
     <!-- Modal -->
 <div class="modal fade bd-example-modal-sm" id="successmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -139,7 +138,7 @@
             <p class="success-message-subheading">You’ve signed up successfully! <br/>You are now part of the waitlist. Please check your inbox for more details.</p>
             <br/>
             <br/>
-          <a href="https://myaugust.app/" class="success-message-home"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Return to Home </a>
+          <a href="/" class="success-message-home"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Return to Home </a>
         </div>
       </div>
     </div>
@@ -178,9 +177,17 @@
     </div>
 
 </footer>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+    {% if successful_submit %}
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#successmodal").modal('show');
+        });
+    </script>
+{% endif %}
 </body>
 </html>

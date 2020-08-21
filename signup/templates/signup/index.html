@@ -1,0 +1,422 @@
+{% load sass_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>August</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="{% static 'css/index.css' %}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header class="august-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-4">
+					<div class="brand-logodiv">
+						<a href="https://myaugust.app/" class="brand-logo">AUGUST</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-8">
+					<div class="header-rightdiv">
+						<ul class="header-socialmedia">
+							<li><a href="https://www.facebook.com/MyAugustapp-110056704136894"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.instagram.com/myaugustapp/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href="https://twitter.com/myaugustapp"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.youtube.com/channel/UCLNzcDbxr8RJSC1ShacYkLw"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/my-august-7152271b5"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						</ul>
+						<a href="/signup" class="header-signup">SignUp</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container h-100vh">
+		<div class="row fullheight align-items-center">
+			<div class="col-12 d-block d-sm-none">
+				<img src="../../static/images/august-brand-mobile.png" class="mx-auto d-block img-fluid m-b-30 m-t-30 wow slideInUp" data-wow-duration="2s">
+			</div>
+			<div class="col-12 col-sm-4 d-none d-sm-block">
+				<img src="../../static/images/august-brand.png" class="mx-auto d-block main-brand-image wow slideInUp" data-wow-duration="2s">
+			</div>
+			<div class="col-12 col-sm-8">
+				<p class="main-heading wow slideInUp" data-wow-duration="2s">Million Problems</p>
+				<p class="main-heading wow slideInUp" data-wow-duration="2s">One <span class="theme-caps">App</span></p>
+				<p class="main-heading wow slideInUp" data-wow-duration="2s">One <span class="theme-caps">Card</span></p>
+				<p class="main-heading wow slideInUp" data-wow-duration="2s">One <span class="theme-caps">Wallet</span></p>
+				<p class="main-heading wow slideInUp" data-wow-duration="2s">One <span class="theme-caps">Solution</span></p>
+				<p class="main-theme-heaading m-t-30 wow slideInUp" data-wow-duration="2s">August</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+				<div class="row">
+					<div class="col-12 offset-sm-1 col-sm-10">
+						<p class="first-top-heading wow slideInUp" data-wow-duration="2s">Power of all the apps, cards and wallets on Earth, Moon and Mars in your pocket.</p>
+						<p class="first-top-subheading wow slideInUp" data-wow-duration="2s">One <span class="theme-caps">card</span> to spend from all your cards. <br/> One <span class="theme-caps">app</span> to manage all your finances. <br/> One <span class="theme-caps">wallet</span> for all your transactions. <br/><br/> The technology you always wanted - A numberless, secure card that can be used worldwide. An app that lets you plan, invest and save, and a multipurpose wallet with endless opportunities. </p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="flip-card-outer flip-card-one wow fadeIn" data-wow-duration="2s">
+							<div class="flip-card flipcard1">
+								<div class="flip-card-inner front">
+									<p class="flip-card-inner-heading color-10 wow slideInUp" data-wow-duration="2s">One Wallet, <br/> Many Possibilities.<br/></p>
+									<p class="flip-card-inner-subheading m-b-5 wow slideInUp" data-wow-duration="2s"><br/>Payments simplified.</p>
+									<p class="flip-card-inner-subheading m-b-5 wow slideInUp" data-wow-duration="2s">Instant funds transfer to bank.</p>
+									<p class="flip-card-inner-subheading m-b-5 wow slideInUp" data-wow-duration="2s">Effortless sending & requesting money.</p>
+									<button class="flip-card-button" onclick="flip('.flipcard1')">
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</button>
+								</div>
+								<div class="flip-card-inner back">
+									<p class="flip-card-inner-content">Making payments faster and affordable. Now send money abroad at no extra cost through a reliable gateway. Be it a business venture or transfer to your loved ones overseas, just enter account details or pay directly to their wallet. August also helps you transfer funds to local bank accounts with just a tap in the most secure and smart way. Furthermore, send or request money, split bills, or pay your friend back in 2 easy steps and get instant notifications every time you make a transaction.</p>
+									<button class="flip-card-button" onclick="flip('.flipcard1')">
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="flip-card-outer flip-card-one wow fadeIn" data-wow-duration="2s">
+							<div class="flip-card flipcard2">
+								<div class="flip-card-inner front color-10">
+									<p class="flip-card-inner-heading white wow slideInUp" data-wow-duration="2s">Go Cashless. <br/> Go Contactless.</p>
+									<p class="flip-card-inner-subheading white m-b-5 wow slideInUp" data-wow-duration="2s"><br/>Now Forget Cash.</p>
+									<p class="flip-card-inner-subheading white m-b-5 wow slideInUp" data-wow-duration="2s">Tap. Pay. Go!</p>
+									<p class="flip-card-inner-subheading white m-b-5 wow slideInUp" data-wow-duration="2s"><br/>#KeepYourDistance</p>
+									<button class="flip-card-button" onclick="flip('.flipcard2')">
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</button>
+								</div>
+								<div class="flip-card-inner back">
+									<p class="flip-card-inner-content">Bulky wallets are a passé; live light and go digital with August App. Make all your payments with a click, anytime anywhere! Be it shopping, dining, travelling, or funds transfer, make  the most of digital-cashless-contactless transactions to stay safe and secure. What's more? Earn upto 100% cashback on every transaction in real cash!</p>
+									<button class="flip-card-button" onclick="flip('.flipcard2')">
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="flip-card-outer flip-card-two wow fadeIn" data-wow-duration="2s">
+							<div class="flip-card flipcard3">
+								<div class="flip-card-inner front color-3">
+									<p class="flip-card-inner-heading white wow slideInUp" data-wow-duration="2s">Money Without Borders. </p>
+									<p class="flip-card-inner-subheading white wow slideInUp" data-wow-duration="2s"><br/><br/>Transfer funds abroad with just a tap at lowest possible rates. </p>
+									<p class="flip-card-inner-subheading white wow slideInUp" data-wow-duration="2s"><br/>#NeverGetScammed</p>
+									<button class="flip-card-button" onclick="flip('.flipcard3')">
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</button>
+								</div>
+								<div class="flip-card-inner back">
+									<p class="flip-card-inner-content">International funds transfer has never been easier! No transaction fee, no hassle, easy payment in seconds.Load wallet with any currency, enter receiver’s details and send money to your loved ones abroad instantly.</p>
+									<button class="flip-card-button" onclick="flip('.flipcard3')">
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="flip-card-outer flip-card-two wow fadeIn" data-wow-duration="2s">
+							<div class="flip-card flipcard4">
+								<div class="flip-card-inner front">
+									<p class="flip-card-inner-heading text-center plus-36 color-10 wow slideInUp" data-wow-duration="2s">Its Free. <br/> </p>
+									<p class="flip-card-inner-heading text-center color-10 wow slideInUp" data-wow-duration="2s">Its 10x Cheaper!!</p>
+									<p class="flip-card-inner-subheading text-center wow slideInUp" data-wow-duration="2s"><br/><br/> #F**KTheBanks</p>
+									<!-- <button class="flip-card-button" onclick="flip('.flipcard4')">
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</button> -->
+								</div>
+								<!-- <div class="flip-card-inner back">
+									<p class="flip-card-inner-content">We understand your pain when you forget where you got that huge bill. No need to worry. Each and every transaction will be recorded with location, date, and time. You get instant notifications for every single spending making your money safe and you aware. All this due to the August App so that only you could control your life. Pay smartly, live happily</p>
+									<button class="flip-card-button" onclick="flip('.flipcard4')">
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</button>
+								</div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 offset-sm-1 col-sm-10">
+						<p class="second-top-heading wow slideInUp" data-wow-duration="2s">How does it work? <br/> Add.Select.Pay! Done. </p>
+						<p class="second-top-subheading wow slideInUp" data-wow-duration="2s">1. <span class="theme-caps">Add</span> all your cards to the app. </p>
+						<p class="second-top-subheading wow slideInUp" data-wow-duration="2s">2. <span class="theme-caps">Select</span> the card you want to pay with. </p>
+						<p class="second-top-subheading wow slideInUp" data-wow-duration="2s">3. <span class="theme-caps">Pay</span> through the app or swipe your August card.</p>
+						<p class="second-top-subheading wow slideInUp" data-wow-duration="2s">4. <span class="theme-caps">Done</span>.</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="flip-card-outer flip-card-three wow fadeIn" data-wow-duration="2s" >
+							<div class="flip-card flipcard6">
+								<div class="flip-card-inner front color-4">
+									<p class="flip-card-inner-heading grey level-1 text-right wow slideInUp" data-wow-duration="2s">Travel <br/> Stress <br/> Free. </p>
+									<p class="flip-card-inner-subheading grey level--1 text-right wow slideInUp" data-wow-duration="2s"> Pay like a local Internationally. <br/> Top-up, Swap and Pay <br/> in any currency anywhere.</p>
+									<button class="flip-card-button" onclick="flip('.flipcard6')">
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</button>
+								</div>
+								<div class="flip-card-inner back">
+									<p class="flip-card-inner-content">August is the perfect travel companion for a smooth and adventurous trip to your favorite destination. Now pay like a local in foriegn currency on a foriegn land with just a tap on the app. Swap currencies in seconds and withdraw cash anytime, anywhere. Choose from over 150 currencies and exchange at the lowest forex rate available. You are also eligible for frequent flier miles, rewards, and cashbacks on every transaction. Now make your life easier and travel light with just one card for all your payment needs without any transaction fee. </p>
+									<button class="flip-card-button" onclick="flip('.flipcard6')">
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="flip-card-outer flip-card-three wow fadeIn" data-wow-duration="2s" >
+							<div class="flip-card flipcard7">
+								<div class="flip-card-inner front color-2">
+									<p class="flip-card-inner-heading level-1 white wow slideInUp" data-wow-duration="2s">Withdraw <br/> Cash <br/> Worldwide.</p>
+									<p class="flip-card-inner-subheading level--1 white wow slideInUp" data-wow-duration="2s">Worldwide cash withdrawal with just one card at no transaction fee. <br/> Dodge the foreign ATM fee forever!</p>
+									<!-- <button class="flip-card-button" onclick="flip('.flipcard7')">
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</button> -->
+								</div>
+								<!-- <div class="flip-card-inner back">
+									<p class="flip-card-inner-content">Choose August App not just to pay your bills. You can get the most of your traveling adventures. Pay anywhere. Get cashback anywhere. If you have August App in your smartphone, you are eligible for goodies. Get rewarded for every spending. You love traveling, we love you. We charge you the lowest forex rates across the globe without hampering your plans & budget.</p>
+									<button class="flip-card-button" onclick="flip('.flipcard7')">
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</button>
+								</div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="flip-card-outer flip-card-four wow fadeIn" data-wow-duration="2s" >
+							<div class="flip-card flipcard8">
+								<div class="flip-card-inner front color-8">
+									<p class="flip-card-inner-subheading white wow slideInUp" data-wow-duration="2s">No Transaction Fees. <br/>
+										No Marked Up Fees. <br/>
+										No Hidden Fees. <br/>
+										No Maintenance Fees. <br/> 
+										No Interest Fees.<br/>
+									</p>
+									<p class="flip-card-inner-heading white plus-36 m-b-0 m-t--10 wow slideInUp" data-wow-duration="2s">No Fees.</p>
+									<p class="flip-card-inner-heading white plus-36 m-t--10 wow slideInUp" data-wow-duration="2s">Ever.</p>
+									<!-- <button class="flip-card-button" onclick="flip('.flipcard8')">
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</button> -->
+								</div>
+								<!-- <div class="flip-card-inner back">
+									<p class="flip-card-inner-content">Paint your spending canvas yourself with August App. Get rid of worries when you are abroad having vacations or joining higher studies. Just top up your August App with money from a bank account. Swap in the currency of which ever country you are. Currently, there are 150 currencies available right at your fingertips. Be the master. In one word, it’s a ‘masterstroke’. Your travel experience, payments, plans, all reach soaring peaks.</p>
+									<button class="flip-card-button" onclick="flip('.flipcard8')">
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</button>
+								</div> -->
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="flip-card-outer flip-card-four wow fadeIn" data-wow-duration="2s" >
+							<div class="flip-card flipcard9">
+								<div class="flip-card-inner front">
+									<p class="flip-card-inner-heading level-1 color-8 m-b-0 wow slideInUp" data-wow-duration="2s">Get Upto</p>
+									<p class="flip-card-inner-heading plus-36 color-8 m-b-0 wow slideInUp" data-wow-duration="2s">100%</p>
+									<p class="flip-card-inner-heading level-1 color-8 m-b-0 wow slideInUp" data-wow-duration="2s">Cashback.</p>
+									<p class="flip-card-inner-subheading wow slideInUp" data-wow-duration="2s">Earn as you pay with guaranteed cashback on every transaction, even when you pay your bills. <br/> Honest Cash. No Tricks. </p>
+									<button class="flip-card-button" onclick="flip('.flipcard9')">
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</button>
+								</div>
+								<div class="flip-card-inner back">
+									<p class="flip-card-inner-content">You read it right! Shop anywhere, pay bills or transfer money and earn upto 100% cashback on every transaction in REAL cash. No points, no gimmicks!  An app that's not just limited to convenient payments, but extends to real rewards making your time and money worthwhile.</p>
+									<button class="flip-card-button" onclick="flip('.flipcard9')">
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="flip-card-outer flip-card-five wow fadeIn" data-wow-duration="2s" >
+							<div class="flip-card flipcard10">
+								<div class="flip-card-inner front color-6">
+									<p class="flip-card-inner-heading color-1 level-1 wow slideInUp" data-wow-duration="2s">Up Your <br/> Shopping <br/> Game.</p>
+									<p class="flip-card-inner-subheading wow slideInUp" data-wow-duration="2s"><br/>Shopping with August is faster, <br/> cheaper and simpler.</p>
+									<button class="flip-card-button" onclick="flip('.flipcard10')">
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</button>
+								</div>
+								<div class="flip-card-inner back">
+									<p class="flip-card-inner-content">Shopping with select merchants is more rewarding and economical when you pay using August App. Shop now, pay later, or opt for easy interest-free EMIs or get it financed to spend at your convenience and earn daily cashbacks. Enjoy a painless shopping experience like never before.</p>
+									<button class="flip-card-button" onclick="flip('.flipcard10')">
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="flip-card-outer flip-card-five wow fadeIn" data-wow-duration="2s" >
+							<div class="flip-card flipcard11">
+								<div class="flip-card-inner front color-1">
+									<p class="flip-card-inner-heading plus-36 white m-b-0 wow slideInUp" data-wow-duration="2s">Buy Now, <br/> Pay Later. </p>
+									<p class="flip-card-inner-subheading white wow slideInUp" data-wow-duration="2s"><br/>With pre-approved credit line and interest free EMI’s, now never hold back on your wish list.</p>
+									<button class="flip-card-button" onclick="flip('.flipcard11')">
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</button>
+								</div>
+								<div class="flip-card-inner back">
+									<p class="flip-card-inner-content">August is your fastest way to shop online with 0% interest. Now buy and pay later at your convenience or opt for easy interest free monthly installments and splurge as you like! With pre-approved credit line shop at any store, buy online, book flights, pay bills, make any transaction and have the freedom to pay whenever you like without the burden of paying extra. </p>
+									<button class="flip-card-button" onclick="flip('.flipcard11')">
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="flip-card-outer flip-card-six wow fadeIn" data-wow-duration="2s" >
+						<div class="flip-card flipcard13">
+							<div class="flip-card-inner front color-7">
+								<p class="flip-card-inner-heading plus-11 color-11 wow slideInUp" data-wow-duration="2s">Stay On <br/> Top Of <br/> Your Money.</p>
+								<p class="flip-card-inner-subheading wow slideInUp" data-wow-duration="2s">Use custom hashtags to manage <br/> and categorize your expenses.</p>
+								<button class="flip-card-button" onclick="flip('.flipcard13')">
+									<i class="fa fa-plus" aria-hidden="true"></i>
+								</button>
+							</div>
+							<div class="flip-card-inner back">
+								<p class="flip-card-inner-content">Be in-charge of your money every time you spend a dime! A cutting-edge feature that lets you categorize and organize all your payments under custom hashtags. Every transaction is recorded with date, time and location only accessible to you leading to a detailed summary of weekly/monthly expenses.</p>
+								<button class="flip-card-button" onclick="flip('.flipcard13')">
+									<i class="fa fa-minus" aria-hidden="true"></i>
+								</button>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="flip-card-outer flip-card-six wow fadeIn" data-wow-duration="2s" >
+							<div class="flip-card flipcard12">
+								<div class="flip-card-inner front color-5">
+									<p class="flip-card-inner-heading white plus-11 wow slideInUp" data-wow-duration="2s">Grow <br/> Your <br/> Money.</p>
+									<p class="flip-card-inner-subheading white wow slideInUp" data-wow-duration="2s">Plan, invest and save for a better future with August’s smart saving options tailor made for you.</p>
+									<button class="flip-card-button" onclick="flip('.flipcard12')">
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</button>
+								</div>
+								<div class="flip-card-inner back">
+									<p class="flip-card-inner-content">Want to save for that trip but can't stick to budget? Let August’s innovative saving options help you invest and save money for all your future expenses. Make the most of in-app financial advice and automated savings based on your spending patterns without costing you a bomb!</p>
+									<button class="flip-card-button" onclick="flip('.flipcard12')">
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="flip-card-outer flip-card-seven wow fadeIn" data-wow-duration="2s" >
+							<div class="flip-card flipcard15">
+								<div class="flip-card-inner front color-11">
+									<p class="flip-card-inner-heading white wow slideInUp" data-wow-duration="2s">Have a <br/>question? <br/> Ask <span class="fontsize-65">FRIDAY!</span></p>
+										<p class="flip-card-inner-subheading white wow slideInUp" data-wow-duration="2s">Your personal assistant powered by AI<br/> to help you round-the-clock.<br/><br/></p>
+										<button class="flip-card-button" onclick="flip('.flipcard15')">
+											<i class="fa fa-plus" aria-hidden="true"></i>
+										</button>
+								</div>
+								<div class="flip-card-inner back">
+									<p class="flip-card-inner-content">Meet Friday - Your personal assistant, financial advisor and virtual friend all in one! You can ask her to send money, automate your savings, manage monthly income, give financial advice, or simply notify your wallet balance. Friday will also help you navigate your way through the app and interact better for a seamless experience. This AI powered chatbot is a state-of-the-art voice recognition software that will make your life easier by the day.</p>
+									<button class="flip-card-button" onclick="flip('.flipcard15')">
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="flip-card-outer flip-card-seven wow fadeIn" data-wow-duration="2s" >
+							<div class="flip-card flipcard14">
+								<div class="flip-card-inner front color-9">
+									<p class="flip-card-inner-heading white wow slideInUp" data-wow-duration="2s">More Intelligent. <br/> More Secure. <br/> More Reliable.</p>
+									<p class="flip-card-inner-subheading white wow slideInUp" data-wow-duration="2s">With world class 265 encrypted algorithms your data is in safe hands because your security is our priority. <br/><br/> #SaferThanBankVault</p>
+									<button class="flip-card-button" onclick="flip('.flipcard14')">
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</button>
+								</div>
+								<div class="flip-card-inner back">
+									<p class="flip-card-inner-content">Our team has worked tirelessly to create technologically advanced encryption algorithms that ensure your data is in safe hands. Your identity is protected by Face ID as well as finger touch so only you can access, operate, and manage your August app. The august card is numberless hence extremely secure but even if you lose it, just block it with a single tap on the app.</p>
+									<button class="flip-card-button" onclick="flip('.flipcard14')">
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12">
+						<p class="last-heading">Signup Now!!</p>
+						<p class="last-subheading">Get ₹500/-*. Limited to 9,999 applicants only. Hurry!!</p>
+						<p class="m-b-0 text-center">
+							<a href="/signup"  class="last-signupbtn">SignUp</a>
+						</p>
+					</div>
+					<div class="col-12">
+						<p class="signup-tnc">*Subject to Terms & Conditions.</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<footer class="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-12"></div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-6">
+					<p class="terms-policy"><a href="https://myaugust.app/terms-and-conditions/">Terms & Conditions</a> | <a href="https://myaugust.app/privacy-policy/">Privacy Policy</a></p>
+					<p class="copyright-text">Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2020 <a href="https://myaugust.app/">AUGUST</a>. All Rights Reserved. </p>
+				</div>
+				<div class="col-12 col-sm-6">
+					<p class="contact-us-heading">&nbsp;</p>
+					<p class="contact-us-mail"><a href="mailto:myaugustapp@gmail.com">Contact Us</a></p>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script src="../../static/js/flip-card.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+</body>
+</html>

@@ -10,6 +10,8 @@ from django.urls import reverse
 
 
 # Create your views here.
+def index(request):
+    return render(request, 'signup/index.html')
 
 def sign_up(request):
     users = AugustUser.objects.all()
@@ -33,7 +35,7 @@ def sign_up(request):
                 print("User not found, Create user");
                 #Create user
                 form.save()
-                return HttpResponseRedirect('signup')
+                return render(request, 'signup/signup.html', {'successful_submit': True})
         else:
             err=form.errors
             ctx = {'err':err}
@@ -45,16 +47,3 @@ def sign_up(request):
 
     context = {'form': form}
     return render(request, 'signup/signup.html', context)
-
-
-# def handle_callback(request):
-#     print("+++++++")
-#     print(request.user)
-#     print(request.token)
-#     if(request.method == "POST"):
-#         print("request was post")
-#     else:
-#         print("request was get")
-#     print("+++++++")
-
-#     return HttpResponse('woop woop')
