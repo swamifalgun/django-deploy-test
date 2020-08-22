@@ -4,5 +4,6 @@ from . import views
 urlpatterns = [
     path('', views.index, name='index'),
     path('signup', views.sign_up, name='sign_up'),
+    path('thankyou', views.thankyou, name='thankyou'),
     #path('accounts/facebook/login/callback/', views.handle_callback, name='handle_callback'),
 ]

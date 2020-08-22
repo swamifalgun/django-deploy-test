@@ -1,0 +1,162 @@
+{% load socialaccount %}
+{% providers_media_js %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>August Sign Up</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+    <link rel="stylesheet" href="https://myaugust.app/wp-content/themes/simple-bootstrap/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}" type="text/css">
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '324285595362415');
+        fbq('track', 'Page View');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=287107909093008&ev=PageView&noscript=1" /></noscript>
+    
+        <script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '324285595362415');
+            fbq('track', 'Page View');
+            fbq('track', 'Complete Registration');
+            </script>
+            <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=287107909093008&ev=PageView&noscript=1" /></noscript>
+        
+            <!-- Global site tag (gtag.js) - Google Ads: 599988861 -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-599988861"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-599988861');
+            </script>
+
+        <!-- Event snippet for Submit_lead_Form conversion page -->
+        <script>
+            gtag('event', 'conversion', {'send_to': 'AW-599988861/SkHICMmTndwBEP20jJ4C'});
+        </script>
+  
+  
+    
+</head>
+<body class="signup-page">
+    <header class="august-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-4">
+					<div class="brand-logodiv">
+						<a href="https://myaugust.app/" class="brand-logo">AUGUST</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-8">
+					<div class="header-rightdiv">
+						<span class="header-get500">Get Rs 500/-*</span>
+						<a href="/signup" class="header-signup">SignUp</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#successmodal">
+        Launch modal
+      </button> -->
+    <!-- Modal -->
+<!-- <div class="modal fade bd-example-modal-sm" id="successmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+            <i class="fa fa-check success-icon" aria-hidden="true"></i>
+            <p class="success-message-heading">Congratulations!!</p>
+            <br/>
+            <p class="success-message-subheading">You’ve signed up successfully! <br/>You are now part of the waitlist. Please check your inbox for more details.</p>
+            <br/>
+            <br/>
+          <a href="/" class="success-message-home"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Return to Home </a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+  <div>
+    <div class="modal-body">
+        <i class="fa fa-check success-icon" aria-hidden="true"></i>
+        <p class="success-message-heading">Congratulations!!</p>
+        <br/>
+        <p class="success-message-subheading">You’ve signed up successfully! <br/>You are now part of the waitlist. Please check your inbox for more details.</p>
+        <br/>
+        <br/>
+      <a href="/" class="success-message-home"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Return to Home </a>
+    </div>
+  </div>
+
+
+  <div class="modal-body">
+    <div class="row">
+        <div class="col-12">
+            <p class="signup-tnc">*Subject to Terms & Conditions.</p>
+        </div>
+    </div>
+</div>
+<footer class="footer-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-12"></div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <p class="terms-policy"><a href="https://myaugust.app/terms-and-conditions/">Terms & Conditions</a> | <a href="https://myaugust.app/privacy-policy/">Privacy Policy</a></p>
+                <p class="copyright-text">Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2020 <a href="https://myaugust.app/">AUGUST</a>. All Rights Reserved. </p>
+            </div>
+            <div class="col-12 col-sm-6">
+                <!-- <p class="contact-us-heading">&nbsp;</p> -->
+                <ul class="header-socialmedia">
+                    <li><a href="https://www.facebook.com/MyAugustapp-110056704136894"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/myaugustapp/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/myaugustapp"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCLNzcDbxr8RJSC1ShacYkLw"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/my-august-7152271b5"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
+                <p class="contact-us-mail"><a href="mailto:myaugustapp@gmail.com">Contact Us</a></p>
+            </div>
+        </div>
+    </div>
+
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<!-- 
+    {% if successful_submit %}
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#successmodal").modal('show');
+        });
+    </script>
+    {% endif %} -->
+</body>
+</html>

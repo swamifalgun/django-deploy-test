@@ -35,11 +35,11 @@ def sign_up(request):
                 print("User not found, Create user");
                 #Create user
                 form.save()
-                return render(request, 'signup/signup.html', {'successful_submit': True})
+                return render(request, 'signup/thankyou.html')
         else:
             err=form.errors
             ctx = {'err':err}
-            return render(request, 'signup/signup.html', ctx)
+            return render(request, 'signup/thankyou.html', ctx)
             
     else:
         form = SignupForm() 
@@ -47,3 +47,8 @@ def sign_up(request):
 
     context = {'form': form}
     return render(request, 'signup/signup.html', context)
+
+
+def thankyou(request):
+
+    return render(request, 'signup/thankyou.html')
