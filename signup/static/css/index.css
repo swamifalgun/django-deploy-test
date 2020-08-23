@@ -3,19 +3,19 @@
     font-family: "Aquire Regular";
     font-style: normal;
     font-weight: normal;
-    src: local("Aquire Regular"), url("https://myaugust.app/wp-content/themes/simple-bootstrap/fonts/Aquire-BW0ox.woff") format("woff");
+    src: local("Aquire Regular"), url("../fonts/Aquire-BW0ox.otf") format("woff");
 }
 @font-face {
     font-family: "Aquire Light";
     font-style: normal;
     font-weight: normal;
-    src: local("Aquire Light"), url("https://myaugust.app/wp-content/themes/simple-bootstrap/fonts/AquireLight-YzE0o.woff") format("woff");
+    src: local("Aquire Light"), url("../fonts/Aquire-BW0ox.otf") format("woff");
 }
 @font-face {
     font-family: "Aquire Bold";
     font-style: normal;
     font-weight: normal;
-    src: local("Aquire Bold"), url("https://myaugust.app/wp-content/themes/simple-bootstrap/fonts/AquireBold-8Ma60.woff") format("woff");
+    src: local("Aquire Bold"), url("../fonts/Aquire-BW0ox.otf") format("woff");
 }
 body {
     background-color: #eff3ff;
