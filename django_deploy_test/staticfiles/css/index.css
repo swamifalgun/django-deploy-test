@@ -1,0 +1,877 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+    font-family: "Aquire Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Aquire Regular"), url("../fonts/Aquire-BW0ox.otf") format("woff");
+}
+@font-face {
+    font-family: "Aquire Light";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Aquire Light"), url("../fonts/Aquire-BW0ox.otf") format("woff");
+}
+@font-face {
+    font-family: "Aquire Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Aquire Bold"), url("../fonts/Aquire-BW0ox.otf") format("woff");
+}
+body {
+    background-color: #eff3ff;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+    color: #2a2a2a;
+}
+.fullwidth {
+    width: 100%;
+    margin-bottom: 0px;
+}
+.fullheight {
+    height: 100%;
+}
+
+.homepage-bg {
+    background: #00baba url(../images/bg-light.png) no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    padding-right: 30px;
+    height: 85vh;
+}
+
+.h-100vh {
+    height: 100vh;
+}
+@media (max-width: 575px) {
+    .h-100vh {
+        height: auto;
+    }
+}
+.white {
+    color: #fff;
+}
+.grey {
+    color: #2a2a2a;
+}
+.m-b-0 {
+    margin-bottom: 0px !important;
+}
+.m-b-5 {
+    margin-bottom: 5px !important;
+}
+.m-b-50 {
+    margin-bottom: 50px;
+}
+.m-t-50 {
+    margin-top: 50px;
+}
+.m-t-30 {
+    margin-top: 30px;
+}
+.m-b-30 {
+    margin-bottom: 30px;
+}
+.m-t--10 {
+    margin-top: -10px;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.august-header {
+    display: block !important;
+    background-color: #00baba;
+    box-shadow: 2px 0px 10px 2px #000000;
+    border-bottom: 3px solid #000000;
+}
+.august-header .container {
+    background-color: #00baba;
+    z-index: 1;
+}
+.brand-logo {
+    display: inline-block;
+    color: #2a2a2a;
+    font-size: 29px;
+    letter-spacing: 1px;
+    font-family: "Aquire Regular";
+    font-family: "Aquire Light";
+    font-family: "Aquire Bold";
+}
+.brand-logo:hover {
+    color: #2a2a2a;
+    text-decoration: none;
+}
+.header-socialmedia {
+    padding-left: 0px;
+    margin-bottom: 0px;
+    list-style-type: none;
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+}
+.header-socialmedia li {
+    display: inline-block;
+    margin-left: 10px;
+    text-align: center;
+}
+.header-socialmedia li a {
+    color: #2a2a2a;
+}
+.header-socialmedia li a i {
+    color: #2a2a2a;
+    font-size: 20px;
+}
+.header-signup {
+    font-size: 14px;
+    font-family: "Aquire Bold";
+    text-transform: uppercase;
+    color: #2a2a2a;
+    background-color: transparent;
+    border: 2px solid #2a2a2a;
+    display: inline-block;
+    padding: 4px 15px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+.header-signup:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.header-rightdiv {
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.header-get500 {
+    font-size: 19px;
+    font-family: "Aquire Bold";
+    margin-right: 15px;
+    display: inline-block;
+    color: #2a2a2a;
+    text-transform: uppercase;
+}
+
+.copyright-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #2a2a2a;
+}
+.copyright-text a {
+    color: #2a2a2a;
+    font-weight: 700;
+}
+.copyright-text a:hover {
+    color: #2a2a2a;
+    text-decoration: none;
+}
+@media (max-width: 575px) {
+    .copyright-text {
+        text-align: center;
+    }
+}
+.terms-policy {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: #2a2a2a;
+}
+.terms-policy a {
+    color: #2a2a2a;
+}
+.terms-policy a:hover {
+    color: #2a2a2a;
+    text-decoration: none;
+}
+@media (max-width: 575px) {
+    .terms-policy {
+        text-align: center;
+    }
+}
+.footer-bottom .container {
+    border-top: 2px solid #2a2a2a;
+}
+.contact-us-heading {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: #2a2a2a;
+    font-weight: 700;
+    text-align: right;
+}
+@media (max-width: 575px) {
+    .contact-us-heading {
+        text-align: center;
+    }
+}
+.contact-us-mail {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #2a2a2a;
+    text-align: right;
+}
+@media (max-width: 575px) {
+    .contact-us-mail {
+        text-align: center;
+    }
+}
+.contact-us-mail a {
+    color: #2a2a2a;
+}
+.contact-us-mail a:hover {
+    color: #2a2a2a;
+    text-decoration: none;
+}
+.main-heading {
+    color: #333333;
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    text-align: right;
+    line-height: 65px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6), -2px -2px 6px rgba(255, 255, 255, 0.5);
+}
+@media (min-width: 576px) and (max-width: 1366px) {
+    .main-heading {
+        font-size: 4.1vw;
+        line-height: 4.758vw;
+    }
+}
+@media (max-width: 575px) {
+    .main-heading {
+        font-size: 24px;
+        line-height: 35px;
+    }
+}
+.main-theme-heaading {
+    color: white;
+    font-size: 170px;
+    line-height: 120px;
+    font-weight: 900;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Aquire Bold";
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6), -2px -2px 6px rgba(255,255,255,0.5);
+}
+@media (min-width: 576px) and (max-width: 1366px) {
+    .main-theme-heaading {
+        font-size: 8.785vw;
+        line-height: 8.785vw;
+    }
+}
+@media (max-width: 575px) {
+    .main-theme-heaading {
+        font-size: 60px;
+        line-height: 65px;
+    }
+}
+.main-brand-image {
+    height: 500px;
+}
+@media (min-width: 576px) and (max-width: 992px) {
+    .main-brand-image {
+        height: 50vw;
+    }
+}
+.first-top-heading {
+    background: linear-gradient(to left top, #003e3e, #008685);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    .first-top-heading {
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+@media (max-width: 575px) {
+    .first-top-heading {
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+.first-top-subheading {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+@media (max-width: 575px) {
+    .first-top-subheading {
+        font-size: 14px;
+    }
+}
+.second-top-heading {
+    background: linear-gradient(to left top, #003e3e, #008685);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+@media (max-width: 575px) {
+    .second-top-heading {
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+.second-top-subheading {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.second-top-subheading:last-child {
+    margin-bottom: 50px;
+}
+.theme-caps {
+    color: #006464;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.last-heading {
+    font-size: 100px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    line-height: 100px;
+    background: linear-gradient(to top, #003e3e, #008685);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media (max-width: 575px) {
+    .last-heading {
+        font-size: 60px;
+        line-height: 60px;
+    }
+}
+.last-subheading {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 33px;
+    font-weight: 600;
+    color: #2a2a2a;
+}
+@media (max-width: 575px) {
+    .last-subheading {
+        font-size: 26px;
+    }
+}
+.last-signupbtn {
+    font-size: 30px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #003e3e, #008685);
+    color: #fff;
+    box-shadow: -9px -9px 16px #ffffff, 9px 9px 16px #ccc;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.last-signupbtn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.flip-card {
+    height: 100%;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: -9px -9px 16px #ffffff, 9px 9px 16px #ccc;
+}
+.flip-card-outer {
+    cursor: pointer;
+    -webkit-perspective: 600;
+    -moz-perspective: 600;
+    perspective: 600;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 576px) {
+    .flip-card-outer {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+.flip-card:hover {
+    transition: all 1s ease;
+    box-shadow: -10px -10px 30px #ffffff, 10px 10px 30px #ccc;
+}
+.flip-card-inner {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 20px;
+    padding: 30px 30px 30px 30px;
+}
+@media (max-width: 575px) {
+    .flip-card-inner {
+        padding: 30px 15px 30px 15px;
+    }
+}
+.flip-card-inner-img {
+    width: auto;
+    max-width: 100%;
+}
+.flip-card-inner-heading {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+    .flip-card-inner-heading {
+        font-size: 44px;
+    }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+    .flip-card-inner-heading {
+        font-size: 40px;
+    }
+}
+@media (max-width: 575px) {
+    .flip-card-inner-heading {
+        font-size: 36px;
+    }
+}
+.flip-card-inner-heading.plus-11 {
+    font-size: 55px;
+}
+@media (min-width: 576px) and (max-width: 992px) {
+    .flip-card-inner-heading.plus-11 {
+        font-size: 44px;
+    }
+}
+@media (max-width: 575px) {
+    .flip-card-inner-heading.plus-11 {
+        font-size: 42px;
+    }
+}
+.flip-card-inner-heading.plus-36 {
+    font-size: 80px;
+}
+@media (min-width: 576px) and (max-width: 992px) {
+    .flip-card-inner-heading.plus-36 {
+        font-size: 50px;
+    }
+}
+@media (max-width: 575px) {
+    .flip-card-inner-heading.plus-36 {
+        font-size: 50px;
+    }
+}
+.flip-card-inner-heading.level-1 {
+    font-size: 50px;
+}
+@media (min-width: 576px) and (max-width: 992px) {
+    .flip-card-inner-heading.level-1 {
+        font-size: 40px;
+    }
+}
+@media (max-width: 575px) {
+    .flip-card-inner-heading.level-1 {
+        font-size: 40px;
+    }
+}
+.flip-card-inner-heading.color-1 {
+    background: linear-gradient(to right, #fc517f 0%, #ffc2d2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.flip-card-inner-heading.color-2 {
+    background: linear-gradient(75deg, #8983ba, #9e98cc 20%, #c29abe 38%, #e197b0 56%, #ff9a7d 74%, #ffb467 84%, #ffda8e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.flip-card-inner-heading.color-8 {
+    background: linear-gradient(to right, #27b7d2, #94d1dd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.flip-card-inner-heading.color-10 {
+    background: linear-gradient(to left top, #003e3e, #008685);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.flip-card-inner-heading.color-11 {
+    background: linear-gradient(to right, #ff9500, #ffc800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.flip-card-inner-subheading {
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+    .flip-card-inner-subheading {
+        font-size: 16px;
+    }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+    .flip-card-inner-subheading {
+        font-size: 16px;
+    }
+}
+@media (max-width: 575px) {
+    .flip-card-inner-subheading {
+        font-size: 16px;
+        font-weight: 800;
+    }
+}
+.flip-card-inner-subheading.level--1 {
+    font-size: 16px;
+}
+@media (max-width: 575px) {
+    .flip-card-inner-subheading.level--1 {
+        font-size: 14px;
+    }
+}
+.flip-card-inner-subheading.color-1 {
+    background: linear-gradient(to right, #fc517f 0%, #ffc2d2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.flip-card-inner-subheading.color-8 {
+    background: linear-gradient(to right, #27b7d2, #94d1dd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.flip-card-inner-subheading.color-10 {
+    background: linear-gradient(to left top, #003e3e, #008685);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.flip-card-inner-subheading.color-11 {
+    background: linear-gradient(to right, #ff9500, #ffc800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.flip-card-inner-content {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+@media (min-width: 576px) and (max-width: 992px) {
+    .flip-card-inner-content {
+        font-size: 14px;
+    }
+}
+@media (max-width: 575px) {
+    .flip-card-inner-content {
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+.flip-card-button {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 50%;
+    border: none;
+    font-size: 16px;
+    padding: 6px 11px;
+}
+.flip-card-button i {
+    font-size: 16px;
+    vertical-align: middle;
+}
+.flip-card .front {
+    background-color: #eff3ff;
+}
+.flip-card .front.color-1 {
+    background: linear-gradient(to right, #fc517f 0%, #ffc2d2 100%);
+}
+.flip-card .front.color-2 {
+    background: linear-gradient(to bottom right, #f8751d, #f2995e);
+}
+.flip-card .front.color-3 {
+    background: url(../images/money-without-borders.jpg) no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+.flip-card .front.color-4 {
+    background: url(../images/travel-stress-free.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.flip-card .front.color-5 {
+    background: url(../images/grow-your-money.jpg) no-repeat;
+    background-position: right center;
+    background-size: cover;
+}
+.flip-card .front.color-6 {
+    background: url(../images/up-your-shopping-game.jpg) no-repeat;
+    background-position: right center;
+    background-size: cover;
+}
+.flip-card .front.color-7 {
+    background: url(../images/stay-on-top-of-your-money.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.flip-card .front.color-8 {
+    background: linear-gradient(to right, #27b7d2, #94d1dd);
+}
+.flip-card .front.color-9 {
+    background-color: #2a2a2a;
+}
+.flip-card .front.color-10 {
+    background: linear-gradient(to right, #003e3e, #008685);
+}
+.flip-card .front.color-11 {
+    background: linear-gradient(to right, #ff9500, #ffc800);
+}
+.flip-card .front .flip-card-button {
+    background-color: #006464;
+    color: #fff;
+}
+.flip-card .back {
+    background: linear-gradient(to right, #003e3e, #008685);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.flip-card .back .flip-card-button {
+    background-color: #fff;
+    color: #006464;
+}
+.flip-card.flipped {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.flip-card.flipped .front .flip-card-button {
+    display: none;
+}
+.flip-card-one {
+    height: 350px;
+}
+.flip-card-two {
+    height: 350px;
+}
+.flip-card-three {
+    height: 350px;
+}
+.flip-card-four {
+    height: 350px;
+}
+.flip-card-five {
+    height: 350px;
+}
+.flip-card-six {
+    height: 350px;
+}
+.flip-card-seven {
+    height: 350px;
+}
+.flipcard2 .front .flip-card-button {
+    background-color: #fff;
+    color: #006464;
+}
+.flipcard2 .back {
+    background: #eff3ff;
+}
+.flipcard2 .back .flip-card-inner-content {
+    color: #006464;
+}
+.flipcard2 .back .flip-card-button {
+    background: linear-gradient(to right, #003e3e, #008685);
+    color: #fff;
+}
+.flipcard3 .front .flip-card-button {
+    background-color: #fff;
+    color: #2a2a2a;
+}
+.flipcard3 .back {
+    background: #eff3ff;
+}
+.flipcard3 .back .flip-card-inner-content {
+    color: #2a2a2a;
+}
+.flipcard3 .back .flip-card-button {
+    background: #2a2a2a;
+    color: #fff;
+}
+.flipcard6 .front .flip-card-button {
+    background-color: #5dbbc2;
+    color: #fff;
+}
+.flipcard6 .back {
+    background: #5dbbc2;
+}
+.flipcard6 .back .flip-card-inner-content {
+    color: #fff;
+}
+.flipcard6 .back .flip-card-button {
+    background: #fff;
+    color: #5dbbc2;
+}
+.flipcard9 .front .flip-card-button {
+    background: linear-gradient(to right, #27b7d2, #94d1dd);
+    color: #fff;
+}
+.flipcard9 .back {
+    background: linear-gradient(to right, #27b7d2, #94d1dd);
+}
+.flipcard9 .back .flip-card-inner-content {
+    color: #fff;
+}
+.flipcard9 .back .flip-card-button {
+    background: #fff;
+    color: #5dbbc2;
+}
+.flipcard10 .front .flip-card-button {
+    background: linear-gradient(to right, #fc517f 0%, #ffc2d2 100%);
+    color: #fff;
+}
+.flipcard10 .back {
+    background: linear-gradient(to right, #fc517f 0%, #ffc2d2 100%);
+}
+.flipcard10 .back .flip-card-inner-content {
+    color: #fff;
+}
+.flipcard10 .back .flip-card-button {
+    background: #fff;
+    color: #fc517f;
+}
+.flipcard11 .front .flip-card-button {
+    background-color: #fff;
+    color: #ec86a7;
+}
+.flipcard11 .back {
+    background: #eff3ff;
+}
+.flipcard11 .back .flip-card-inner-content {
+    color: #ec86a7;
+}
+.flipcard11 .back .flip-card-button {
+    background: #ec86a7;
+    color: #fff;
+}
+.flipcard13 .front .flip-card-button {
+    background: linear-gradient(to right, #ff9500, #ffc800);
+    color: #fff;
+}
+.flipcard13 .back {
+    background: linear-gradient(to right, #ff9500, #ffc800);
+}
+.flipcard13 .back .flip-card-inner-content {
+    color: #fff;
+}
+.flipcard13 .back .flip-card-button {
+    background: #fff;
+    color: #ff9500;
+}
+.flipcard12 .front .flip-card-button {
+    background-color: #fff;
+    color: #ed9621;
+}
+.flipcard12 .back {
+    background: #eff3ff;
+}
+.flipcard12 .back .flip-card-inner-content {
+    color: #ed9621;
+}
+.flipcard12 .back .flip-card-button {
+    background: #ed9621;
+    color: #fff;
+}
+.flipcard15 .front .flip-card-button {
+    background-color: #fff;
+    color: #eea11e;
+}
+.flipcard15 .back {
+    background: #eff3ff;
+}
+.flipcard15 .back .flip-card-inner-content {
+    color: #eea11e;
+}
+.flipcard15 .back .flip-card-button {
+    background: #eea11e;
+    color: #fff;
+}
+.flipcard14 .front .flip-card-button {
+    background-color: #fff;
+    color: #2a2a2a;
+}
+.flipcard14 .back {
+    background: #eff3ff;
+}
+.flipcard14 .back .flip-card-inner-content {
+    color: #2a2a2a;
+}
+.flipcard14 .back .flip-card-button {
+    background: #2a2a2a;
+    color: #fff;
+}
+.fontsize-65 {
+    font-size: 65px;
+}
+@media (max-width: 575px) {
+    .fontsize-65 {
+        font-size: 50px;
+    }
+}
+.signup-tnc {
+    font-style: italic;
+    font-size: 10px;
+    margin-bottom: 0px;
+    text-align: right;
+}
+@media (min-width: 576px) and (max-width: 992px) {
+    .flipcard14 .flip-card-inner-heading {
+        font-size: 30px;
+    }
+    .flipcard6 .back .flip-card-inner-content {
+        font-size: 13px;
+    }
+}
+@media (max-width: 575px) {
+    .brand-logodiv {
+        text-align: center;
+    }
+    .flipcard14 .flip-card-inner-heading {
+        font-size: 30px;
+    }
+    .flipcard1 .back .flip-card-inner-content {
+        font-size: 13px;
+    }
+    .flipcard6 .back .flip-card-inner-content {
+        font-size: 13px;
+    }
+}
